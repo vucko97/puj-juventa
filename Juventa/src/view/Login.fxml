@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <top>
+      <Label alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="88.0" prefWidth="600.0" style="-fx-background-color: #a34747;" text="Prijavi se" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+   </top>
+   <bottom>
+      <Label fx:id="statusLbl" alignment="CENTER" maxWidth="1.7976931348623157E308" prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: #a34747;" textFill="WHITE" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Label>
+   </bottom>
+   <center>
+      <AnchorPane prefHeight="273.0" prefWidth="616.0" style="-fx-background-color: #b7b7b7;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="imeTxt" layoutX="226.0" layoutY="67.0" />
+            <PasswordField fx:id="lozinkaTxt" layoutX="226.0" layoutY="154.0" />
+            <Text fill="WHITE" layoutX="278.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ime :">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="259.0" layoutY="130.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lozinka : ">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Text>
+            <Button fx:id="loginBtn" layoutX="226.0" layoutY="218.0" mnemonicParsing="false" onAction="#login" prefHeight="25.0" prefWidth="149.0" text="Prijava" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
